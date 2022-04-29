@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuck Norris Jokes</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: sans-serif;
+            
+        }
+        h1 {
+            font-size: 3rem;
+            color:#F25A24;
+            text-shadow: -3px 3px 0px #1F2530;
+            font-weight: 900;
+          
+        }
+        #btn {
+            border: none;
+            border-radius: 20px;
+            padding: 2%;
+            color: #F25A24;
+            background-color: #1F2530;
+            font-size: larger;
+        }
+
+        #btn:hover {
+            background-color: #353638;
+            cursor: pointer;
+        }
+        .getjoke {
+            margin: 5% auto;
+            width: 400px;
+            min-height: 200px;  
+            background-color: #F7AC50 ;
+            box-shadow: -10px 10px 0px #1F2530;
+            border-radius: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5%;
+            overflow: hidden;
+        }
+
+        #showJokes {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1F2530;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>CHUCK NORRIS JOKES </h1>
+        <button id="btn" >GET A JOKE!</button>
+        <div class="getjoke">
+            
+            <p id="showJokes"> Click Button To Get a Joke </p>
+            
+        </div>
+    </div>
+    <script>
+        console.log("Chuck Norris");
+let btn = document.getElementById("btn");
+let showJokes = document.getElementById("showJokes");
+
+btn.onclick = () => {
+  fetch("https://api.chucknorris.io/jokes/random")
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      var joke = data.value;
+      showJokes.innerHTML = '"'+joke+'"' ;
+    });
+};
+    </script>
+</body>
+</html> 

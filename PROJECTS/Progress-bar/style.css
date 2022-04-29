@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills h2 {
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    color: #fff;
+    font-size: 16px;
+    /* text-shadow: -1px 1px 2px rgb(2, 238, 226); */
+}
+
+.progress-bar {
+    background-color: #959595;
+    width: 600px;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.progress-bar div {
+    width: 0%;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.progress-bar div span {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #222;
+    color: #fff;
+    float: right;
+    margin-top: -15px;
+    margin-left: -20px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    /* padding: 2%; */
+}
+
+.html {
+    background-color: #e91e63;
+    animation: html 1s linear forwards;
+}
+
+
+
+.css {
+    background-color: #cddc39;
+    animation: css 1s linear forwards;
+}
+
+.php {
+    background-color: #39dc9e;
+    animation: php 1s linear forwards;
+}
+
+.javascript {
+    background-color: #00bcd4;
+    animation: javascript 1s linear forwards;
+}
+
+.python {
+    background-color: #ffeb3b;
+    animation: python 1s linear forwards;
+}
+
+.react {
+    background-color: #9c27b0;
+    animation: react 1s linear forwards;
+}
+
+
+.html span {
+    background-color: #e91e63;
+    border: 1px solid #e91e63;
+}
+
+
+.css span {
+    background-color: #cddc39;
+    border: 1px solid #cddc39;
+}
+
+.php span {
+    background-color: #39dc9e;
+    border: 1px solid #39dc9e;
+}
+
+.javascript span {
+    background-color: #00bcd4;
+    border: 1px solid #00bcd4;
+}
+
+.python span {
+    background-color: #ffeb3b;
+    border: 1px solid #ffeb3b;
+}
+
+.react span {
+    background-color: #9c27b0;
+    border: 1px solid #9c27b0;
+}
+
+/* animation  */
+
+@keyframes html {
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes css {
+    100% {
+        width: 86%;
+    }
+}
+
+@keyframes php {
+    100% {
+        width: 85%;
+    }
+}
+
+@keyframes javascript {
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes python {
+    100% {
+        width: 75%;
+    }
+}
+
+@keyframes react {
+    100% {
+        width: 50%;
+    }
+}
